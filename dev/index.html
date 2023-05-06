@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<head>
+ 
+  <link rel="stylesheet" href="./styleSheet.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  
+    <header>
+      <div id="top"></div>
+      <div id="titleContainer" style="display: block;">
+        <h1 style="color: #f4f4f4;">
+            Kane Mathis
+        </h1>
+      </div>
+      <!-- hamburger menu --> 
+      <div id="smallScreenNav" >
+        <input class="menu-trigger hidden" id="togglenav" type="checkbox"/>
+        <label class="burger-wrapper" for="togglenav">
+            <div class="hamburger" id="hamburger"></div>
+        </label>
+      </div>  
+      <!-- end hamburger menu -->
+      <!-- nav menu for small screen -->
+      <div id="small-screen-menu" style="display: none;">
+        <div class="smallMenuLink">
+          <a href="./#top">
+            Home
+          </a>
+        </div>
+        
+        <div class="smallMenuLink">
+          <a href="./#bio-section">
+            Bio
+          </a>
+        </div>
+        <div class="smallMenuLink">
+          <a href="./#projects">
+            Projects
+          </a>
+        </div>
+        <div class="smallMenuLink">
+          <a href="./#posts">
+            Posts
+          </a>
+        </div>
+         <div class="smallMenuLink">
+          <a href="./#contact">
+            Contact
+          </a>
+        </div>
+
+
+      </div>
+    </header>
+
+     <!-- Hero Container -->
+    <div id="hero-container">
+      <div></div>
+      <div>
+          <h3 id="hero-text"><q>
+
+          There is something within me that might be illusion as it is often case with young delighted people, but if I would be fortunate to achieve some of my ideals, it would be on the behalf of the whole of humanity.</q>
+            <b>- Nikola Tesla</b>
+          </h3>
+          <a href="./#bio-section">
+            <div id="arrow-container">
+              <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </a>
+          
+      </div>
+      
+    </div>
+
+      <!-- nav menu for larger screens -->
+  <div id="main-header">
+    <div id="headerNav">
+      <nav>
+              <div class="menuLink">
+                <a href="./#top">
+                  Home
+                </a>
+              </div>
+
+              <div class="menuLink">
+                <a href="./#bio-section">
+                  Bio
+                </a>
+              </div>
+              
+              <div class="menuLink">
+                <a href="./#projects">
+                  Projects
+                </a>
+              </div>                
+              
+              <div class="menuLink">
+                <a href="./#posts">
+                  Posts
+                </a>
+              </div>
+            
+                <div class="menuLink">
+                <a href="./#contact">
+                Contact
+                </a>
+                </div>
+      </nav>
+  </div>
+  </div>
+
+    <div>
+      <div id="bio-section">
+        <h3>BIO</h3>
+        <div id="image-container">
+          <img id="profile-image" src="images/Pencil-drawing-headshot.4.png">
+        </div>
+        <p class="text">
+          
+          I love working in teams to find creative solutions to interesting problems. I am always open to learning new frameworks and languages and adapting to what is needed for any context. My background is in full stack software development using Java Script, React, Ruby, Ruby on Rails, Active Record, HTML, and CSS. I have over 20 years of experience working on deliverables for creative teams and value good professional communication. I write clear, detailed proposals and assimilate feedback from fellow team members well. I am good at planning and creating proof-of-concepts for client approval and value outside perspectives on my solutions. If you have an idea for a project, get in touch and let's talk about how to realize your idea. Thanks for visiting!
+          
+        </p>
+        <div class="three-grid">
+            <div></div>
+            <div>
+              <a href="https://www.linkedin.com/in/kane-mathis/" target="_blank">
+                <img id="sm-bug" src="./images/LI-In-Bug.png" >
+              </a>
+              <a href="https://kms-strategies.ghost.io/" target="_blank">
+                <img id="sm-bug" src="./images/ghost-logo-light.png" >
+              </a>
+            </div>
+            <div></div>
+        </div>
+        
+        
+      </div>
+    </div>
+    <!-- Project Cards  --> 
+
+    <div id="projects">
+      <h3>Projects</h3>
+      <div id="projects-container" >
+        <div class="project-card">
+          <div class="project-top"> </div>
+          <div class="project-bottom">
+            <div class="project-title-wrap">
+            <h4 id=project1 class="project-title" data-value="project1">
+            The Feedback App
+            </h4>
+            </div>
+            <p class="project-summary">
+              Messaging and submission app for media professionals and thier clients. Clients have non-admin access to projects where they can leave feedback for professionals on a submission.  
+            </p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top"> </div>
+          <div class="project-bottom">
+            <div class="project-title-wrap">
+            <h4 id=project2 class="project-title">
+            Practice Timer
+            </h4>
+            </div>
+            <p class="project-summary">
+              This Productivity timer tracks time spent on tasks with a timer for intervals. Analysis shows how much time was spent on each task from one week to one month. 
+            </p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div  class="project-top"> </div>
+            <div class="project-bottom">
+              <div  class="project-title-wrap">
+              <h4 id=project3 class="project-title">
+              Town Board
+              </h4>
+              </div>
+              <p class="project-summary">
+                a message board app that allows users to make public posts but only edit thier own.
+              </p>
+            </div>
+          </div>
+      </div>
+     
+      <div id="project-video-container">
+        <div id="dynamic-video"></div>
+      </div>
+    </div>
+    <!-- end Project Cards -->
+    
+
+    <!-- blog cards -->
+
+    <div id="posts">
+        <h3>Posts</h3>
+        <div id="card-container">
+              
+                <a href="https://kms-strategies.ghost.io/the-usecontext-hook-in-react" target="_blank">
+                  <div class="post-card">
+                        <div class="card-top"> </div>
+                        <div class="card-bottom">
+                          <div class="blog-title-wrap">
+                          <h4 class="blog-title">
+                          The Use Context Hook In React
+                          </h4>
+                          </div>
+                          <p class="blog-summary">In this blog post we will look at what I consider the most straightforward way to begin using the useContext hook in React. </p>
+                        </div>
+                        
+                  </div>
+                </a>
+                
+                <a href="https://kms-strategies.ghost.io/implementing-join-tables-using-ruby-on-rails-and-active-record/" target="_blank">
+                  <div class="post-card">
+                        <div class="card-top"> </div>
+                        <div class="card-bottom">
+                          <div class="blog-title-wrap">
+                          <h4 class="blog-title">
+                            Implementing Join Tables Using Ruby on Rails and Active Record
+                          </h4>
+                          </div>
+                          <p class="blog-summary">I love the way that Active Record handles Object Relational Mapping and I'm sure anyone that wants an alternative to writing SQL commands and database access code would agree. </p>
+                        </div>
+                  </div>
+                </a>
+               
+                <a href="https://kms-strategies.ghost.io/object-oriented-programming-class-and-module-inheritance-with-ruby/" target="_blank">
+                  <div class="post-card">
+                        <div class="card-top"> </div>
+                        <div class="card-bottom">
+                          <div class="blog-title-wrap">
+                          <h4 class="blog-title">
+                            Object Oriented Programming-Class and Module inheritance with Ruby
+                          </h4>
+                          </div>
+                          <p class="blog-summary">There is a lot to love about Ruby, the coding language of "careful balance"(ruby-lang.org). One thing that sets Ruby apart from other object-oriented languages is its principles of inheritance. </p>
+                        </div>
+                  </div>
+                </a>
+
+                <a href="https://kms-strategies.ghost.io/the-lost-context-bugs-most-durable-solution/" target="_blank">
+                  <div class="post-card">
+                        <div class="card-top"> </div>
+                        <div class="card-bottom">
+                          <div class="blog-title-wrap">
+                          <h4 class="blog-title">
+                            The Lost Context Bug's Most Durable Soloution
+                          </h4>
+                          </div>
+                          <p class="blog-summary">
+                            I was digging into some of the common Lost Context fixes in various configurations today and discovered something interesting.</p>
+                        </div>
+                  </div>
+                </a>
+
+                <a href="https://kms-strategies.ghost.io/setting-up-nested-routes-using-react-router/" target="_blank">
+                  <div class="post-card">
+                        <div class="card-top"> </div>
+                        <div class="card-bottom">
+                          <div class="blog-title-wrap">
+                          <h4 class="blog-title">
+                            Setting up nested routes using React Router
+                          </h4>
+                          </div>
+                          <p class="blog-summary">
+                            In this blog post we will look at a simple example of setting up nested routes using React Router. React Router is a routing library used for constructing user interfaces..</p>
+                        </div>
+                  </div>
+                </a>
+          
+
+
+        </div>
+    </div>
+      
+    <!-- end blog cards -->
+
+
+    <!--  contact form  -->
+    <!-- <div id="contact"> 
+      <h3>Contact</h3>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfrSmIWYPLY2NVE7xVIcys5cDtX12tS9evaxxcu9o2XiOpAzw/viewform?embedded=true" width="800" height="800" frameborder="0">Loading…</iframe>
+    </div> -->
+
+   <!-- updated contact form -->
+
+
+   <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+  <h3>Contact</h3>
+   <div  id="contact" style="color: #f4f4f4;">
+    <div></div>
+    <form id="contact-form">
+      <h4>name:</h4>
+      <input type="text" id="name">
+      <h4>email:</h4>
+      <input type="text" id="email">
+      <h4>message:</h4>
+      <textarea id="message"></textarea>
+      <input type="submit">
+    </form>
+   </div>
+      <script src="./script.js"></script>
+     
+
+
+</body>
+</html>
