@@ -151,7 +151,6 @@ function detectBrowser() {
     name.value='';
     email.value='';
     message.value='';
-
   }
 
   function sendEmail(name, email, message){

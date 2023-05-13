@@ -28,8 +28,6 @@ p {
 }
 
 
-
-
 #main-header{
   position:sticky;
   top: 0;
@@ -59,7 +57,6 @@ p {
   margin-left: -20px;
   width: 100%;
 }
-
 
 
 /* end name header */
@@ -167,6 +164,12 @@ p {
 /* bio section */
 
 #bio-section{
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-bottom-width: 3px;
+  border-top-width: 3px;
+  border-bottom-color: #999;
+  border-top-color: #999;
   margin-top: 100px;
   margin-bottom: 20px;
   padding: 25px;
@@ -202,6 +205,12 @@ backdrop-filter: blur( 4px );
 /* -----------  begins project cards ------------------*/
 
 #projects{
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-bottom-width: 3px;
+  border-top-width: 3px;
+  border-bottom-color: #999;
+  border-top-color: #999;
   margin-top: 150px;
   padding: 25px;
   height: 100%;
@@ -288,6 +297,12 @@ backdrop-filter: blur( 4px );
   margin-bottom: 100px;
   height: fit-content;
   padding: 25px;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-bottom-width: 3px;
+  border-top-width: 3px;
+  border-bottom-color: #999;
+  border-top-color: #999;
 }
 
 #card-container{
@@ -371,6 +386,7 @@ margin-top: 30px;
   border-style: double;
   margin: 10px;
   border-radius: 30px;
+  
 }
 
 #contact-form{
@@ -601,7 +617,6 @@ a:link {
     margin: 2vh;
     padding-top: 5vh;
   }
-
 }
 
   /* activate show menu behavior */
