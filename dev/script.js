@@ -17,7 +17,6 @@
     smallScreenNav.addEventListener("click", handleMobileNavClick)
 
 function handleMobileNavClick(){
-    console.log("mobile nav clicked");
     if (smallScreenMenu.style.display==="none")
     {toggleNav.checked=true;
         smallScreenMenu.style.display = "block" }
@@ -32,7 +31,6 @@ function handleMobileNavClick(){
 
 links.forEach((index)=>{index.addEventListener('click', handleLinkClick)})
 function handleLinkClick() {
-  console.log(" a link clicked ");
   smallScreenMenu.style.display = "none";
   toggleNav.checked=false;
   
@@ -53,7 +51,7 @@ function mediaInq(){
 
     }
     else if (mediaQueryMin.matches) {
-        console.log('larger screen detected');
+        
         // titleContainer.style.display= "block";
         headerNav.style.display = "block";
         smallScreenNav.style.display = "none";
@@ -61,8 +59,7 @@ function mediaInq(){
         toggleNav.checked=false
 
     }
-    else { console.log('small screen detected') 
-    // titleContainer.style.display= "none";
+    else {
         headerNav.style.display = "none";
         smallScreenNav.style.display = "block";
     }
@@ -91,7 +88,6 @@ function detectBrowser() {
       browserName = "Unknown";
     }
   
-    console.log("You are browsing with: " + browserName + "");
   }
 
   detectBrowser();
@@ -110,7 +106,6 @@ function detectBrowser() {
   projectElementsArr.map(index=>index.addEventListener('click', listen));
 
   function listen(e){
-    console.log(e.target.class)
 
     let dyn=document.getElementById("dynamic-video");
       if (dyn.hasChildNodes()===true){
@@ -147,7 +142,6 @@ function detectBrowser() {
     let message=document.getElementById('message');
     e.preventDefault();
     sendEmail(name.value, email.value, message.value);
-    console.log(name.value, email.value, message.value)
     name.value='';
     email.value='';
     message.value='';
@@ -163,7 +157,12 @@ function detectBrowser() {
     + `<br> MESSAGE: "${message}"`
     + ` <br> E-MAIL: ${email}`
     }).then(
-      message => alert(message)
+      (message) => {
+        if (message==="OK"){
+          alert("Thanks, Your Message Has Been Sent!")
+        }
+        else alert ("There was a problem submitting your message, please try again")
+      }
     );
   }
 
