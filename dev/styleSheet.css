@@ -1,3 +1,14 @@
+:root {
+  --box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.042),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.061),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.075),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.089),
+  41.8px 41.8px 33.4px rgba(25, 26, 30, 0.108),
+  100px 100px 80px rgb(25, 26, 31)
+;
+}
+
 html{
   scroll-behavior: smooth;
 }
@@ -32,10 +43,11 @@ p {
   position:sticky;
   top: 0;
   z-index: 999;
+  
 }
 
 #headerNav{
-  font-size: x-large;
+    font-size: x-large;
     display: block;
     width: 100vw;
     margin-left: 50%;
@@ -47,7 +59,7 @@ p {
 .menuLink{
   float: left;
   padding: 10px;
-  background-color: rgb(34, 36, 42);
+  background-color: rgba(34, 36, 42, 0.84);
   
 }
 /* Name Header */
@@ -164,12 +176,8 @@ p {
 /* bio section */
 
 #bio-section{
-  border-bottom-style: solid;
-  border-top-style: solid;
-  border-bottom-width: 3px;
-  border-top-width: 3px;
-  border-bottom-color: #999;
-  border-top-color: #999;
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
   margin-top: 100px;
   margin-bottom: 20px;
   padding: 25px;
@@ -205,19 +213,23 @@ backdrop-filter: blur( 4px );
 /* -----------  begins project cards ------------------*/
 
 #projects{
-  border-top-style: solid;
+  
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
   border-bottom-width: 3px;
-  border-top-width: 3px;
   border-bottom-color: #999;
   border-top-color: #999;
   margin-top: 150px;
   padding: 25px;
   height: 100%;
+  
+
 }
 
 #projects-container{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+ 
 }
 
 .project-card{
@@ -291,17 +303,12 @@ backdrop-filter: blur( 4px );
 /* begin blog cards */
 
 #posts{
+  border-radius: 10px;
   color: #fff;
   margin-top: 100px;
-  /* margin-bottom: 100px; */
   height: fit-content;
   padding: 25px;
-  border-bottom-style: solid;
-  border-top-style: solid;
-  border-bottom-width: 3px;
-  border-top-width: 3px;
-  border-bottom-color: #999;
-  border-top-color: #999;
+  box-shadow: var(--box-shadow)
 }
 
 #card-container{
