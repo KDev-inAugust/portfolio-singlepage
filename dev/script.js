@@ -159,9 +159,9 @@ function detectBrowser() {
     To : 'buy1@kanemathis.com',
     From : "kanesolar@gmail.com",
     Subject : "Webform Submission!!",
-    Body : `FROM: ${name} 
-    MESSAGE: "${message}"
-    E-MAIL: ${email}`
+    Body : `FROM: ${name} `
+    + `<br> MESSAGE: "${message}"`
+    + ` <br> E-MAIL: ${email}`
     }).then(
       message => alert(message)
     );

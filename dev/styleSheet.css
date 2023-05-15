@@ -205,7 +205,6 @@ backdrop-filter: blur( 4px );
 /* -----------  begins project cards ------------------*/
 
 #projects{
-  border-bottom-style: solid;
   border-top-style: solid;
   border-bottom-width: 3px;
   border-top-width: 3px;
@@ -294,7 +293,7 @@ backdrop-filter: blur( 4px );
 #posts{
   color: #fff;
   margin-top: 100px;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
   height: fit-content;
   padding: 25px;
   border-bottom-style: solid;
@@ -372,25 +371,44 @@ margin-top: 30px;
 
 
 /* contact section */
-
 #contact{
+  /* color: #fff; */
+  margin-top: 25px;
+  height: fit-content;
+  padding: 25px;
+  border-bottom-style: solid;
+  border-bottom-width: 10px;
+  border-bottom-color: #999;
+}
+
+
+#contact-input{
   display: grid;
+  height: 60vh;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   margin-left: auto;
   margin-right: auto;
   justify-items: center;
   text-align: center;
+  margin: 10px;
+}
+
+#contact-container {
+  padding: 20px;
   border-width: 5px;
   border-color: #39393e;
   border-style: double;
-  margin: 10px;
   border-radius: 30px;
-  
 }
 
 #contact-form{
   padding: 10px;
+  margin: 20px;
+}
+
+#contact-greeting{
+  text-align: center;
 }
 
 input {
