@@ -379,26 +379,11 @@ margin-top: 30px;
 
 /* contact section */
 #contact{
-  /* color: #fff; */
   margin-top: 25px;
-  height: fit-content;
   padding: 25px;
   border-bottom-style: solid;
   border-bottom-width: 10px;
   border-bottom-color: #999;
-}
-
-
-#contact-input{
-  display: grid;
-  height: 60vh;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  margin-left: auto;
-  margin-right: auto;
-  justify-items: center;
-  text-align: center;
-  margin: 10px;
 }
 
 #contact-container {
@@ -407,6 +392,18 @@ margin-top: 30px;
   border-color: #39393e;
   border-style: double;
   border-radius: 30px;
+}
+
+#contact-input{
+  display: grid;
+  /* height: 60vh; */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: center;
+  text-align: center;
+  margin: 10px;
 }
 
 #contact-form{
@@ -459,13 +456,15 @@ cursor: pointer;
 
 /* small screen navigation pop-up */
 #small-screen-menu{
+  text-size-adjust: none;
   opacity: 80%;
-  width: 80%;
-  height: auto;
+  width: 100%;
+  height: 100%;
   position: fixed;
+  padding-top: 20%;
   margin-left: 50%;
-  margin-top: 20%;
   transform: translateX(-50%);
+  top: 0;
   z-index:5;
   background-color: black;
   border-radius: 10px;
@@ -509,7 +508,7 @@ a:link {
     margin: 9px;
 }
 
-/* small screen nav toggle */
+/* small screen nav */
 
 #smallScreenNav {
   width: fit-content;
@@ -563,11 +562,10 @@ a:link {
   }
 
 
-  /* sizing the hamburgerwrapper based on screen size */
-
 /* Media query for screen */
 
 @media (hover: none) {
+
  #hero-text{
     font-size: 2em;
   }
@@ -581,7 +579,7 @@ a:link {
     font-size: 1.5em;
     text-size-adjust: none;
   }
-  .project-summary, .blog-summary {
+  .project-summary, .blog-summary, #contact-container {
     font-size: 1.5em;
     text-size-adjust: none;
   } 
@@ -594,11 +592,22 @@ a:link {
  
 }
 
+@media screen and (orientation: landscape){
+  #small-screen-menu {
+    font-size: x-small;
+    top: 0;
+    padding-top: 10px;
+  }
 
+  .smallMenuLink {
+    padding: 20px;
+  }
+ 
+}
 
 
   /* toggle burger nav styling - Media query for screen width 768 pixels and above */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (orientation: portrait) {
 
   #smallScreenNav {
     width: fit-content;
@@ -614,19 +623,19 @@ a:link {
     z-index: 999;
   }
 
-  #small-screen-menu {
-    opacity: 80%;
-    width: 80%;
-    height: auto;
+  /* #small-screen-menu {
+    text-size-adjust: none;
+    width: 100%;
+    height: 100%;
     position: fixed;
     margin-left: 50%;
-    margin-top: 20%;
+    margin-top: 0%;
     transform: translateX(-50%);
     z-index:5;
     background-color: black;
     border-radius: 10px;
     animation: fadeIn  1s;
-  }
+  } */
 
   .smallMenuLink{
     font-size: 4em;
