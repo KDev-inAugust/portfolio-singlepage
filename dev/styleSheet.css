@@ -1,3 +1,5 @@
+/* this is the variable declaration for the main sections' box shadows' */
+
 :root {
   --box-shadow:
   2.8px 2.8px 2.2px rgba(0, 0, 0, 0.042),
@@ -9,6 +11,7 @@
 ;
 }
 
+/* smooth scroll to avoid jumping too quickly to a section when a link is clicked */
 html{
   scroll-behavior: smooth;
 }
@@ -418,25 +421,21 @@ margin-top: 30px;
 input {
   border: none;
   border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   font-size: 16px;
   padding: 10px;
 }
 
 /* Style for the input field when it's focused */
-input:focus {
+#name:focus, #email:focus, #message:focus {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  outline: none;
+  outline:rgba(0, 144, 222, 0.564);
+  outline-style:double;
+  outline-width: 7px;
 }
 
-/* Style for the placeholder text in the input field */
-::placeholder {
-  color: #999;
-}
-
-/* Style for the input field when it's disabled */
-input:disabled {
-  opacity: 0.5;
+.submit-button {
+margin-top: 3px;
+cursor: pointer;
 }
 
 /* end contact */
