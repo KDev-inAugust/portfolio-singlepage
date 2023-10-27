@@ -17,24 +17,22 @@ html{
 }
 
 body {
+    margin: 0;
     background-color: rgb(35, 36, 42);
-    font-family: 'Sora', sans-serif;
-    margin: auto;
+    font-family: 'Sora', sans-serif;    
 }
 
-h3 {
-  padding: 20px;
-  text-align: center;
-  color: white;
-}
 
 header {
   width: auto;
 }
 
-#top {
-  position: relative;
-  margin-top: 0px;
+h1{
+  font-size: 4.75rem;
+}
+
+h3{
+  font-size: 3.25rem;
 }
 
 p {
@@ -69,29 +67,24 @@ p {
 
 /* Name Header */
 
-#titleContainer {
-  text-align: right;
-  margin-left: -20px;
-  width: 100%;
-}
-
-
 /* end name header */
 
 #hero-container{
-  height: 90vh;
-  padding-top: 20%;
-  background-image: url("images/grid_0-3.png");
+  margin: 0;
+  height: 100vh;
+  background-image: url('./images/katerina-kerdi--YiJvbfNDqk-unsplash.jpg');
   background-size:cover;
-  background-position: 10%;
-  border-top-style: solid;
-  border-top-width: 3px;
-  border-top-color: rgba(69, 70, 75, 0.192);
-  padding: 10px;
-  display: grid;
-  grid-template-columns: .4fr 1fr .4fr;
-  grid-auto-rows: minmax(100px, auto);
+  background-position: center;
+  /* border: 3px solid; */
 }
+
+#hero-container h1, #hero-container h3{
+  color: rgb(152, 97, 25);
+  margin: 0;
+  text-align: right;
+  padding: 5px 20px;
+}
+
 
 /* arrow */
 #arrow-container{
@@ -144,25 +137,16 @@ p {
 
 /* end arrow */
 
-#hero-text {
-  background: rgba( 0, 0, 0, 0.40 );
-  box-shadow: 0 8px 32px 0 rgba(7, 9, 33, 0.37);
-  backdrop-filter: blur( 6.5px );
-  -webkit-backdrop-filter: blur( 6px );
-  border-radius: 20px;
-  padding: auto;
-  height: fit-content;
-  font-size: x-large;
-  border-width: 10px;
-  border-style: outset;
-  border-color: #5152501e;
+.section{
+  max-width: 900px;
+  margin: auto;
 }
 
 /* profile image */
 #image-container {
   height: 300px;
   width: 300px;
-  background-color: rgba(0, 0, 0, 0.283);
+  background-color: rgba(0, 0, 0, 0.066);
   border-radius: 100%;
   overflow: hidden;
   margin-right: 10px;
@@ -179,6 +163,11 @@ p {
 
 
 /* bio section */
+#bio-container{
+  background-image: url('./images/yunxi-shi-4I2tTx49dbE-unsplash.jpg');
+  background-position: top;
+  padding: 5vw;
+}
 
 #bio-section{
   box-shadow: var(--box-shadow);
@@ -187,14 +176,17 @@ p {
   margin-bottom: 20px;
   padding: 25px;
   height: 100%;
+  background-image: url('./images/yunxi-shi-4I2tTx49dbE-unsplash.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
 .text{
 padding: 20px;
 border-radius: 10px;
-background: rgba(30, 30, 30, 0.25);
-backdrop-filter: blur( 4px );
--webkit-backdrop-filter: blur( 4px );
+background: rgba(0, 0, 0, 0.347);
+backdrop-filter: blur( 10px );
+-webkit-backdrop-filter: blur( 10px );
 }
 
 #sm-bug{
@@ -320,8 +312,8 @@ backdrop-filter: blur( 4px );
 }
 
 .post-card{
-  background-image: url(images/grid_0-3.png);
-  background-size:cover;
+  background-image: url('./images/ricardo-gomez-angel-bJq9g-VRCic-unsplash.jpg');
+  background-size:contain;
     /* box-shadow: 0 0px 20px 0 rgba(121, 121, 100, 0.37); */
     border-radius: 10px;
     text-align: center;

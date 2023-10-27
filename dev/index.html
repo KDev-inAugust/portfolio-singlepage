@@ -10,64 +10,12 @@
 </head>
 
 <body>
-  
-    <header>
-      <div id="top"></div>
-      <div id="titleContainer" style="display: block;">
-        <h1 style="color: #f4f4f4;">
-            Kane Mathis
-        </h1>
-      </div>
-      <!-- hamburger menu --> 
-      <div id="smallScreenNav" >
-        <input class="menu-trigger hidden" id="togglenav" type="checkbox"/>
-        <label class="burger-wrapper" for="togglenav">
-            <div class="hamburger" id="hamburger"></div>
-        </label>
-      </div>  
-      <!-- end hamburger menu -->
-      <!-- nav menu for small screen -->
-      <div id="small-screen-menu" style="display: none;">
-        <div class="smallMenuLink">
-          <a href="./#top">
-            Home
-          </a>
-        </div>
-        
-        <div class="smallMenuLink">
-          <a href="./#bio-section">
-            Bio
-          </a>
-        </div>
-        <div class="smallMenuLink">
-          <a href="./#projects">
-            Projects
-          </a>
-        </div>
-        <div class="smallMenuLink">
-          <a href="./#posts">
-            Posts
-          </a>
-        </div>
-         <div class="smallMenuLink">
-          <a href="./#contact">
-            Contact
-          </a>
-        </div>
-
-
-      </div>
-    </header>
 
      <!-- Hero Container -->
     <div id="hero-container">
-      <div></div>
-      <div>
-          <h3 id="hero-text"><q>
-
-          There is something within me that might be illusion as it is often case with young delighted people, but if I would be fortunate to achieve some of my ideals, it would be on the behalf of the whole of humanity.</q>
-            <b>- Nikola Tesla</b>
-          </h3>
+  
+          <h1>Kane Mathis</h1>
+          <h3>Web Developer</h3>
           <a href="./#bio-section">
             <div id="arrow-container">
               <div class="arrow">
@@ -77,9 +25,7 @@
               </div>
             </div>
           </a>
-          
-      </div>
-      
+    
     </div>
 
       <!-- nav menu for larger screens -->
@@ -87,7 +33,7 @@
     <div id="headerNav">
       <nav>
               <div class="menuLink">
-                <a href="./#top">
+                <a href="./#">
                   Home
                 </a>
               </div>
@@ -119,10 +65,52 @@
   </div>
   </div>
 
-    <div>
-      <div id="bio-section">
+
+ <!-- hamburger menu --> 
+ <div id="smallScreenNav" >
+  <input class="menu-trigger hidden" id="togglenav" type="checkbox"/>
+  <label class="burger-wrapper" for="togglenav">
+      <div class="hamburger" id="hamburger"></div>
+  </label>
+</div>  
+<!-- end hamburger menu -->
+<!-- nav menu for small screen -->
+<div id="small-screen-menu" style="display: none;">
+  <div class="smallMenuLink">
+    <a href="./#">
+      Home
+    </a>
+  </div>
+  
+  <div class="smallMenuLink">
+    <a href="./#bio-section">
+      Bio
+    </a>
+  </div>
+  <div class="smallMenuLink">
+    <a href="./#projects">
+      Projects
+    </a>
+  </div>
+  <div class="smallMenuLink">
+    <a href="./#posts">
+      Posts
+    </a>
+  </div>
+   <div class="smallMenuLink">
+    <a href="./#contact">
+      Contact
+    </a>
+  </div>
+</div>
+
+
+
+
+
+    <div id="bio-container">
+      <div class="section" id="bio-section">
         <h3>BIO</h3>
-        
         <div id="bio-grid">
           <div id="image-container">
             <img id="profile-image" src="images/Pencil-drawing-headshot.4.png">
@@ -150,7 +138,7 @@
     </div>
     <!-- Project Cards  --> 
 
-    <div id="projects">
+    <div class="section" id="projects">
       <h3>Projects</h3>
       <div id="projects-container" >
         <div class="project-card">
@@ -205,7 +193,7 @@
 
     <!-- blog cards -->
 
-    <div id="posts">
+    <div class="section" id="posts">
         <h3>Posts</h3>
         <div id="card-container">
               
@@ -291,7 +279,7 @@
 
 
    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <div id="contact"> 
+    <div class="section" id="contact"> 
       <h3>Contact</h3>
       <div id="contact-container">
         <p id="contact-greeting">fill out this form to get in touch, if you have an idea you want to realize, or would like to work together. 
