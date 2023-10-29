@@ -73,9 +73,13 @@ p {
 #hero-container{
   margin: 0;
   height: 100vh;
-  background-image: url('./images/katerina-kerdi--YiJvbfNDqk-unsplash.jpg');
+  background-image:
+    linear-gradient(to top, rgb(52, 52, 52) 5%, rgba(15, 43, 6, 0)),
+    url('./images/katerina-kerdi--YiJvbfNDqk-unsplash.jpg');
+  /* background-image:linear-gradient(to bottom, rgb(0, 25, 0) 30%, rgb(67, 164, 35)), url('./images/katerina-kerdi--YiJvbfNDqk-unsplash.jpg'); */
   background-size:cover;
   background-position: center;
+  
   /* border: 3px solid; */
 }
 
