@@ -101,9 +101,11 @@ function detectBrowser() {
     project3: "video/Town Board Walk Through.mov"
   }
 
-  let projectTitle = document.getElementsByClassName("project-title");
+  let projectTitle = document.getElementsByClassName("project-card");
   projectElementsArr=Array.from(projectTitle);
   projectElementsArr.map(index=>index.addEventListener('click', listen));
+
+  console.log(projectElementsArr)
 
   function listen(e){
 
@@ -111,7 +113,8 @@ function detectBrowser() {
       if (dyn.hasChildNodes()===true){
         clear();
         };
-      displayProject(e.target.id)
+      displayProject(e.target.id);
+      console.log(e.target.value)
   }
 
   function clear (){

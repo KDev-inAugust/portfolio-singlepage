@@ -20,7 +20,8 @@ body {
     margin: 0;
     background-color: rgb(52, 52, 52);
     /* background-color: rgb(109, 157, 186); */
-    font-family: 'Sora', sans-serif;    
+    font-family: 'Nunito Sans', sans-serif;
+font-family: 'Sora', sans-serif;   
 }
 
 
@@ -30,14 +31,17 @@ header {
 
 h1{
   font-size: 4.75rem;
+  font-weight: 100;
 }
 
 h3{
   font-size: 3.25rem;
+  font-weight: 100;
 }
 
 p {
   color: white;
+  font-weight: 100;
 }
 
 
@@ -147,6 +151,10 @@ p {
   margin: auto;
 }
 
+.section-container{
+  width: 100vw;
+}
+
 /* profile image */
 #image-container {
   height: 300px;
@@ -169,13 +177,10 @@ p {
 
 /* bio section */
 #bio-container{
-  /* background-image: url('./images/yunxi-shi-4I2tTx49dbE-unsplash.jpg');
-  background-position: top;
-  padding: 5vw; */
+  padding: 0;
 }
 
 #bio-section{
-  box-shadow: var(--box-shadow);
   border-radius: 10px;
   margin-top: 100px;
   margin-bottom: 20px;
@@ -212,76 +217,54 @@ backdrop-filter: blur( 10px );
 
 
 /* -----------  begins project cards ------------------*/
+#projects-container{
+  background-image: linear-gradient(to right, rgba(52, 52, 52, 0.909) 50%, rgba(15, 43, 6, 0)),url('./images/jonatan-lindemann-Dv89X4z6-I8-unsplash.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+#projects-container h3{
+  color: rgb(177, 68, 22);
+  font-weight: 400;
+}
 
 #projects{
-  box-shadow: var(--box-shadow);
+  color: #b4b4b4;
+  background-position: center;
+  background-size: cover;
   border-radius: 10px;
   border-bottom-width: 3px;
   border-bottom-color: #999;
   border-top-color: #999;
   margin-top: 150px;
   padding: 25px;
-  height: 100%;
 }
 
-#projects-container{
+#projectcard-container{
   display: grid;
   /* grid-template-columns: repeat(3, 1fr); */
 }
 
 .project-card{
-  background-image: url(images/grid_0.png);
-  background-size:cover;
-  /* box-shadow: 0 0px 20px 0 rgba(121, 121, 100, 0.37); */
-  border-radius: 10px;
-  text-align: center;
-  margin: 10px;
-  height: fit-content;
+  color: #999;
+  padding: 1rem;
+  font-weight: bold;
+  border: 2px solid rgb(171, 171, 171);
+  background: #000000bc;
+  /* border: 3px solid red; */
 }
 
-.project-top {
-  height: 5em;
+.project-card:hover{
+  color: #0e0101;
+  background-color: rgba(177, 173, 49, 0.791);
 }
 
-.project-bottom{
-  background-color: rgba(48, 48, 48, 0.888);
-  height: fit-content;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  text-align: center;
-  padding: 5px;
-}
-
-.project-card:hover .project-title-wrap{
-  transform: scale(1.1);
-  background: linear-gradient(to right, rgba(255, 209, 26, 0.809), rgb(50, 44, 162));
-  box-shadow: 0 0px 20px 0 rgba(148, 148, 131, 1.0);
-}
-
-
-.project-title {
-  background-color: rgba(40, 40, 40, 0.782);
-}
-
-.project-title-wrap {
-  padding: 3px;
-  position: relative;
-  background: linear-gradient(to right, rgba(255, 0, 0, 0.564), rgb(6, 0, 128));
-  transition: 0.5s;
-}
-
-.project-title {
-  background: #252525;
-  color: white;
-  margin-top: 3px;
-  margin-bottom: 3px;
-  padding: 3px;
-}
 
 
 #project-video-container{
   width: fit-content;
-  margin:auto;
+  /* margin:auto; */
   margin-top: 20px;
   border: 3px solid #515250;
   background-color: #39393e;
@@ -298,14 +281,15 @@ backdrop-filter: blur( 10px );
 /* end project cards */
 
 /* begin blog cards */
-
+#posts-container{
+  background: #252525;
+}
 #posts{
   border-radius: 10px;
   color: #fff;
-  margin-top: 100px;
+  /* margin-top: 100px; */
   height: fit-content;
   padding: 25px;
-  box-shadow: var(--box-shadow)
 }
 
 #card-container{
@@ -435,7 +419,7 @@ cursor: pointer;
 /* end contact */
 
 @media screen and (min-width: 33em) {
-  #card-container, #projects-container{
+  #card-container, #projectcard-container{
     display: grid;
     grid-template-columns:1fr;
     gap: 2em;
@@ -443,7 +427,7 @@ cursor: pointer;
 }
 
 @media screen and (min-width: 40em) {
-  #card-container, #projects-container{
+  #card-container, #projectcard-container{
     display: grid;
     grid-template-columns:1fr 1fr 1fr;
     gap: 2em;
@@ -581,7 +565,7 @@ a:link {
     text-size-adjust: none;
   } 
 
-  #card-container, #projects-container{
+  #card-container, #projectcard-container{
       display: grid;
       grid-template-columns:1fr;
       gap: 2em;
@@ -620,20 +604,6 @@ a:link {
     z-index: 999;
   }
 
-  /* #small-screen-menu {
-    text-size-adjust: none;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    margin-left: 50%;
-    margin-top: 0%;
-    transform: translateX(-50%);
-    z-index:5;
-    background-color: black;
-    border-radius: 10px;
-    animation: fadeIn  1s;
-  } */
-
   .smallMenuLink{
     font-size: 4em;
     padding: 30px;
@@ -665,7 +635,6 @@ a:link {
 
   /* adjust spacing for heading sections */
   #bio-section, #projects, #posts{
-    margin: 2vh;
     padding-top: 5vh;
   }
 }

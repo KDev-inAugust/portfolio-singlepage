@@ -4,9 +4,8 @@
  
   <link rel="stylesheet" href="./styleSheet.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100&display=swap" rel="stylesheet">
-
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,600&family=Sora:wght@100;200;300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -108,91 +107,70 @@
 
 
 
-    <div id="bio-container">
+    <div class="section-container" id="bio-container" >
       <div class="section" id="bio-section">
-        <h3>BIO</h3>
-        <div id="bio-grid">
-          <div id="image-container">
-            <img id="profile-image" src="images/Pencil-drawing-headshot.4.png">
-          </div>
-          <p class="text">
-            I love working in teams to find creative solutions to interesting problems. I am always open to learning new frameworks and languages and adapting to what is needed for any context. My background is in full stack software development using Java Script, React, Ruby, Ruby on Rails, Active Record, HTML, and CSS. I have over 20 years of experience working on deliverables for creative teams and value good professional communication. I write clear, detailed proposals and assimilate feedback from fellow team members well. I am good at planning and creating proof-of-concepts for client approval and value outside perspectives on my solutions. If you have an idea for a project, get in touch and let's talk about how to realize your idea. Thanks for visiting!
-          </p>
-        </div>
-      
-        <div class="three-grid">
-            <div></div>
-            <div>
-              <a href="https://www.linkedin.com/in/kane-mathis/" target="_blank">
-                <img id="sm-bug" src="./images/LI-In-Bug.png" >
-              </a>
-              <a href="https://kms-strategies.ghost.io/" target="_blank">
-                <img id="sm-bug" src="./images/ghost-logo-light.png" >
-              </a>
+            <h3>BIO</h3>
+            <div id="bio-grid">
+              <div id="image-container">
+                <img id="profile-image" src="images/Pencil-drawing-headshot.4.png">
+              </div>
+              <p class="text">
+                I love working in teams to find creative solutions to interesting problems. I am always open to learning new frameworks and languages and adapting to what is needed for any context. My background is in full stack software development using Java Script, React, Ruby, Ruby on Rails, Active Record, HTML, and CSS. I have over 20 years of experience working on deliverables for creative teams and value good professional communication. I write clear, detailed proposals and assimilate feedback from fellow team members well. I am good at planning and creating proof-of-concepts for client approval and value outside perspectives on my solutions. If you have an idea for a project, get in touch and let's talk about how to realize your idea. Thanks for visiting!
+              </p>
             </div>
-            <div></div>
-        </div>
-        
+          
+            <div class="three-grid">
+                <div></div>
+                <div>
+                  <a href="https://www.linkedin.com/in/kane-mathis/" target="_blank">
+                    <img id="sm-bug" src="./images/LI-In-Bug.png" >
+                  </a>
+                  <a href="https://kms-strategies.ghost.io/" target="_blank">
+                    <img id="sm-bug" src="./images/ghost-logo-light.png" >
+                  </a>
+                </div>
+                <div></div>
+      </div>
         
       </div>
     </div>
     <!-- Project Cards  --> 
-
+<div class="section-container" id="projects-container" >
     <div class="section" id="projects">
       <h3>Projects</h3>
-      <div id="projects-container" >
-        <div class="project-card">
-          <div class="project-top"> </div>
-          <div class="project-bottom">
-            <div class="project-title-wrap">
-            <h4 id=project1 class="project-title" data-value="project1">
-            The Feedback App
-            </h4>
-            </div>
-            <p class="project-summary">
-              Messaging and submission app for media professionals and thier clients. Clients have non-admin access to projects where they can leave feedback for professionals on a submission.  
-            </p>
-          </div>
+      <div id="projectcard-container" >
+        <div class="project-card" id="project1" data-value="project1">
+          <h4>The Feedback App</h4>
+          <p class="project-summary">
+            Messaging and submission app for media professionals and thier clients. Clients have non-admin access to projects where they can leave feedback for professionals on a submission.  
+          </p>
         </div>
 
-        <div class="project-card">
-          <div class="project-top"> </div>
-          <div class="project-bottom">
-            <div class="project-title-wrap">
-            <h4 id=project2 class="project-title">
-            Practice Timer
-            </h4>
-            </div>
-            <p class="project-summary">
-              This Productivity timer tracks time spent on tasks with a timer for intervals. Analysis shows how much time was spent on each task from one week to one month. 
-            </p>
-          </div>
+        <div class="project-card" id="project2" data-value="project2">
+          <h4>Practice Timer</h4>
+          <p class="project-summary">
+            This Productivity timer tracks time spent on tasks with a timer for intervals. Analysis shows how much time was spent on each task from one week to one month. 
+          </p>
         </div>
 
-        <div class="project-card">
-          <div  class="project-top"> </div>
-            <div class="project-bottom">
-              <div  class="project-title-wrap">
-              <h4 id=project3 class="project-title">
-              Town Board
-              </h4>
-              </div>
-              <p class="project-summary">
-                a message board app that allows users to make public posts but only edit thier own.
-              </p>
-            </div>
-          </div>
+        <div class="project-card" id="project3" data-value="project3">
+          <h4>Town Board</h4>
+          <p class="project-summary">
+            a message board app that allows users to make public posts but only edit thier own.
+          </p>
+        </div>
       </div>
      
       <div id="project-video-container">
         <div id="dynamic-video"></div>
       </div>
     </div>
+  </div>
     <!-- end Project Cards -->
     
 
     <!-- blog cards -->
-
+<div class="section-container" id="posts-container" > 
     <div class="section" id="posts">
         <h3>Posts</h3>
         <div id="card-container">
@@ -274,6 +252,7 @@
 
         </div>
     </div>
+  </div>
       
     <!-- end blog cards -->
 
