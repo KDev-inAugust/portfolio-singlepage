@@ -178,6 +178,9 @@ p {
 /* bio section */
 #bio-container{
   padding: 0;
+  background-image: url('./images/hummingbird\ grey\ fill.png');
+background-position: center;
+background-size: cover;
 }
 
 #bio-section{
@@ -186,7 +189,7 @@ p {
   margin-bottom: 20px;
   padding: 25px;
   height: 100%;
-  background-image: url('./images/hummingbird\ grey\ fill.png');
+  
   background-position: center;
   background-size: cover;
 }
@@ -221,7 +224,8 @@ backdrop-filter: blur( 10px );
   background-image: linear-gradient(to right, rgba(52, 52, 52, 0.909) 50%, rgba(15, 43, 6, 0)),url('./images/jonatan-lindemann-Dv89X4z6-I8-unsplash.jpg');
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  max-height: fit-content;
+  min-height: 100vh;
 }
 
 #projects-container h3{
@@ -241,23 +245,27 @@ backdrop-filter: blur( 10px );
   padding: 25px;
 }
 
-#projectcard-container{
-  display: grid;
-  /* grid-template-columns: repeat(3, 1fr); */
-}
 
 .project-card{
   color: #999;
   padding: 1rem;
   font-weight: bold;
   border: 2px solid rgb(171, 171, 171);
-  background: #000000bc;
+  background-color: #000000bc;
+  -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   /* border: 3px solid red; */
 }
 
 .project-card:hover{
   color: #0e0101;
   background-color: rgba(177, 173, 49, 0.791);
+}
+
+.project1.active, .project2.active, .project3.active{
+  border: 3px solid rgb(170, 170, 29);
+  background-color: rgba(56, 66, 32, 0.724);
+  border-top-left-radius: 30px;
 }
 
 

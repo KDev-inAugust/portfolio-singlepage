@@ -96,25 +96,35 @@ function detectBrowser() {
   // ------- display project on click --------
 
   const videoURLsObj = {
-    project1: "video/Feedback App Demo.mov",
-    project2: "video/React Interval Timer.mp4", 
-    project3: "video/Town Board Walk Through.mov"
+    "project-card project1": "video/Feedback App Demo.mov",
+    "project-title project1": "video/Feedback App Demo.mov",
+    "project-summary project1": "video/Feedback App Demo.mov",
+
+    "project-card project2": "video/React Interval Timer.mp4", 
+    "project-title project2": "video/React Interval Timer.mp4",
+    "project-summary project2": "video/React Interval Timer.mp4",
+
+    "project-card project3": "video/Town Board Walk Through.mov", 
+    "project-title project3": "video/Town Board Walk Through.mov",
+    "project-summary project3": "video/Town Board Walk Through.mov"
   }
 
-  let projectTitle = document.getElementsByClassName("project-card");
-  projectElementsArr=Array.from(projectTitle);
+  let projectCard = document.getElementsByClassName("project-card");
+  projectElementsArr=Array.from(projectCard);
   projectElementsArr.map(index=>index.addEventListener('click', listen));
 
-  console.log(projectElementsArr)
-
   function listen(e){
-
+    projectElementsArr.map(index=>index.classList.remove('active'));
     let dyn=document.getElementById("dynamic-video");
       if (dyn.hasChildNodes()===true){
         clear();
         };
-      displayProject(e.target.id);
-      console.log(e.target.value)
+      displayProject(e.target.className);
+
+      const index=e.target.className[e.target.className.length-1];
+      let card=document.getElementsByClassName(`project${index}`);
+      
+      card[0].classList.toggle("active");
   }
 
   function clear (){
