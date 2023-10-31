@@ -43,11 +43,17 @@ window.addEventListener('resize', (e) => {
 
 
 function mediaInq(){
+  
     const mediaQueryMin = window.matchMedia('only screen and (min-width: 646px)')
     if (!!window.navigator.userAgent.match(/iPhone/i)){
         // titleContainer.style.display= "none";
         headerNav.style.display = "none";
         smallScreenNav.style.display = "block";
+        let cards=document.getElementsByClassName("project-card");
+        cards[0].href='./#projects';
+        cards[1].href='./#projects';
+        cards[2].href='./#projects';
+
 
     }
     else if (mediaQueryMin.matches) {
@@ -56,12 +62,22 @@ function mediaInq(){
         headerNav.style.display = "block";
         smallScreenNav.style.display = "none";
         smallScreenMenu.style.display = "none";
-        toggleNav.checked=false
+        toggleNav.checked=false;
+        let cards=document.getElementsByClassName("project-card");
+        cards[0].href='./#projects';
+        cards[1].href='./#projects';
+        cards[2].href='./#projects';
+        
 
     }
     else {
         headerNav.style.display = "none";
         smallScreenNav.style.display = "block";
+        let cards=document.getElementsByClassName("project-card");
+        cards[0].href='./#video-anchor';
+        cards[1].href='./#video-anchor';
+        cards[2].href='./#video-anchor';
+
     }
 }
 
