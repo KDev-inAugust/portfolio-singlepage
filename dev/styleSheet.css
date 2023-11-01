@@ -251,7 +251,7 @@ backdrop-filter: blur( 10px );
   font-weight: bold;
   border: 2px solid rgb(171, 171, 171);
   background-color: #000000bc;
-  -webkit-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 
@@ -292,8 +292,9 @@ backdrop-filter: blur( 10px );
 /* end project cards */
 
 /* begin blog cards */
-#posts-container{
-  background: #252525;
+#posts-container h3{
+  color: rgb(177, 68, 22);
+  font-weight: 400;
 }
 #posts{
   color: #b4b4b4;
@@ -319,36 +320,46 @@ backdrop-filter: blur( 10px );
 }
 
 .post-card{
-    border: 2px solid white;
+    /* border-width: 2px;
+    border-style: solid;
+    border-color: white; */
     padding: 0.5rem 1rem;
     text-align: center;
-    transition-duration: 0.5s;
     background-color: #404040;
+
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.185);
 }
 
 .post-card:nth-child(1){
   grid-area: one;
   background-color: rgba(67, 59, 54, 0.782);
+  background-image: linear-gradient(to bottom, rgb(58, 58, 58) 20%, rgba(52, 52, 52, 0.553)), url("./images/lautaro-andreani-UYsBCu9RP3Y-unsplash.jpg");
+  background-position: center;
 }
 
 .post-card:nth-child(1):hover{
-  background-image: linear-gradient(to bottom, rgb(58, 58, 58) 20%, rgba(52, 52, 52, 0.553)), url("./images/lautaro-andreani-UYsBCu9RP3Y-unsplash.jpg");
+ 
   background-size: cover;
   background-position: right;
-  border-color: rgb(229, 242, 44);
+  border: 3px solid whitesmoke;
+  border-top-left-radius: 50px;
 }
 
 .post-card:nth-child(2){
   grid-area: two;
   background-color: rgba(165, 63, 42, 0.234);
-
+  background-image: linear-gradient(to bottom, rgb(58, 58, 58) 20%, rgba(52, 52, 52, 0.553)), url("./images/jason-d-fN4zr3xUzIY-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .post-card:nth-child(2):hover{
-  background-image: linear-gradient(to bottom, rgb(58, 58, 58) 20%, rgba(52, 52, 52, 0.553)), url("./images/jason-d-fN4zr3xUzIY-unsplash.jpg");
   background-size: cover;
-  background-position: center;
-  border-color: rgb(178, 188, 35);
+  background-position: right;
+  border: 3px solid whitesmoke;
+  border-top-left-radius: 50px;
 }
 
 .post-card:nth-child(3){
@@ -360,7 +371,8 @@ backdrop-filter: blur( 10px );
   background-image: linear-gradient(to bottom, rgb(58, 58, 58) 10%, rgba(52, 52, 52, 0)), url("./images/joshua-fuller-p8w7krXVY1k-unsplash.jpg");
   background-size: cover;
   background-position: center;
-  border-color: rgb(178, 188, 35);
+  border: 3px solid whitesmoke;
+  border-top-left-radius: 50px;
 }
 
 .post-card:nth-child(4){
@@ -372,7 +384,8 @@ backdrop-filter: blur( 10px );
   background-image: linear-gradient(to bottom, rgb(58, 58, 58) 15%, rgba(52, 52, 52, 0)), url("./images/maksym-kaharlytskyi-1KdnEeZ-gLU-unsplash.jpg");
   background-size: cover;
   background-position: center;
-  border-color: rgb(178, 188, 35);
+  border: 3px solid whitesmoke;
+  border-top-left-radius: 50px;
 }
 
 .post-card:nth-child(5){
@@ -384,9 +397,9 @@ backdrop-filter: blur( 10px );
   background-image: linear-gradient(to bottom, rgb(58, 58, 58) 15%, rgba(52, 52, 52, 0)), url("./images/muneeb-syed-pueWrwi9_WY-unsplash.jpg");
   background-size: cover;
   background-position: center;
-  border-color: rgb(178, 188, 35);
+  border: 3px solid whitesmoke;
+  border-top-left-radius: 50px;
 }
-
 
 
 .post-card:hover {
@@ -396,11 +409,18 @@ backdrop-filter: blur( 10px );
 
 .blog-title {
   padding: 3px;
+  color: rgb(207, 90, 47);
 }
 
 .blog-summary{
   font-size: small;
   background-size: contain;
+}
+
+.large-card{
+  background-image: url('./images/hummingbird\ grey\ fill.png');
+  background-size: contain;
+  height: 200px;
 }
 
 
