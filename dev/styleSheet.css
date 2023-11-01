@@ -304,8 +304,18 @@ backdrop-filter: blur( 10px );
 
 #card-container{
   display: grid;
-  grid-auto-rows: repeat(3, 100px);
-  gap: 2fr;
+    gap: 1rem;
+    /* grid-auto-columns: 1fr; */
+    grid-template-areas:
+    /* "one"
+    "two"
+    "three"
+    "four"
+    "five" */
+    "one two three"
+    "one two four"
+    "five five five"
+;
 }
 
 .post-card{
@@ -315,6 +325,69 @@ backdrop-filter: blur( 10px );
     transition-duration: 0.5s;
     background-color: #404040;
 }
+
+.post-card:nth-child(1){
+  grid-area: one;
+  background-color: rgba(67, 59, 54, 0.782);
+}
+
+.post-card:nth-child(1):hover{
+  background-image: linear-gradient(to bottom, rgb(58, 58, 58) 20%, rgba(52, 52, 52, 0.553)), url("./images/lautaro-andreani-UYsBCu9RP3Y-unsplash.jpg");
+  background-size: cover;
+  background-position: right;
+  border-color: rgb(229, 242, 44);
+}
+
+.post-card:nth-child(2){
+  grid-area: two;
+  background-color: rgba(165, 63, 42, 0.234);
+
+}
+
+.post-card:nth-child(2):hover{
+  background-image: linear-gradient(to bottom, rgb(58, 58, 58) 20%, rgba(52, 52, 52, 0.553)), url("./images/jason-d-fN4zr3xUzIY-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  border-color: rgb(178, 188, 35);
+}
+
+.post-card:nth-child(3){
+  grid-area: three;
+  background-color: rgba(138, 165, 42, 0.255);
+}
+
+.post-card:nth-child(3):hover{
+  background-image: linear-gradient(to bottom, rgb(58, 58, 58) 10%, rgba(52, 52, 52, 0)), url("./images/joshua-fuller-p8w7krXVY1k-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  border-color: rgb(178, 188, 35);
+}
+
+.post-card:nth-child(4){
+  grid-area: four;
+  background-color: rgba(42, 165, 50, 0.315);
+}
+
+.post-card:nth-child(4):hover{
+  background-image: linear-gradient(to bottom, rgb(58, 58, 58) 15%, rgba(52, 52, 52, 0)), url("./images/maksym-kaharlytskyi-1KdnEeZ-gLU-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  border-color: rgb(178, 188, 35);
+}
+
+.post-card:nth-child(5){
+  grid-area: five;
+  background-color: rgba(42, 126, 165, 0.362);
+}
+
+.post-card:nth-child(5):hover{
+  background-image: linear-gradient(to bottom, rgb(58, 58, 58) 15%, rgba(52, 52, 52, 0)), url("./images/muneeb-syed-pueWrwi9_WY-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  border-color: rgb(178, 188, 35);
+}
+
+
 
 .post-card:hover {
   background-color: rgb(54, 41, 23);
@@ -398,18 +471,34 @@ cursor: pointer;
 /* end contact */
 
 @media screen and (max-width: 40rem) {
-  #card-container, #projectcard-container{
+  #projectcard-container{
     display: grid;
     grid-template-columns:1fr;
     gap: 2rem;
   }
+
+  #card-container{
+    grid-template-areas:
+    "one"
+    "two"
+    "three"
+    "four"
+    "five"
+  }
 }
 
 @media screen and (min-width: 40rem) {
-  #card-container, #projectcard-container{
+  #projectcard-container{
     display: grid;
     grid-template-columns:1fr 1fr 1fr;
     gap: 2rem;
+  }
+
+  #card-container{
+    grid-template-areas:
+    "one two three"
+    "one two four"
+    "X five five"
   }
 }
 
