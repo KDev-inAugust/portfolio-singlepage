@@ -137,10 +137,13 @@ function detectBrowser() {
         };
       displayProject(e.target.className);
 
-      const index=e.target.className[e.target.className.length-1];
+
+      let index=e.target.className[e.target.className.length-1];
       let card=document.getElementsByClassName(`project${index}`);
       
+
       card[0].classList.toggle("active");
+      
   }
 
   function clear (){
