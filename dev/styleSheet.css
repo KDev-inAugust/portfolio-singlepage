@@ -192,9 +192,13 @@ background-size: cover;
   margin-bottom: 20px;
   padding: 25px;
   height: 100%;
-  
   background-position: center;
   background-size: cover;
+}
+
+#bio-section h3{
+  color: rgb(177, 68, 22);
+  font-weight: 400;
 }
 
 .text{
@@ -425,6 +429,11 @@ backdrop-filter: blur( 10px );
   border-bottom-style: solid;
   border-bottom-width: 10px;
   border-bottom-color: #999;
+}
+
+#contact h3{
+  color: rgb(177, 68, 22);
+  font-weight: 400;
 }
 
 #contact-container {
