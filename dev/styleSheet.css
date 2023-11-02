@@ -667,14 +667,17 @@ a:link {
     text-size-adjust: none;
   } 
 
-  #card-container{
-      display: grid;
-      grid-template-columns:1fr;
-      gap: 2em;
-    }
+
 
    
-
+    #card-container{
+      grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four"
+      "five"
+    }
 
  
 }
