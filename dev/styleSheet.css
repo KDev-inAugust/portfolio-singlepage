@@ -200,13 +200,6 @@ background-size: cover;
   font-weight: 400;
 }
 
-.text{
-padding: 20px;
-border-radius: 10px;
-background: rgba(0, 0, 0, 0.347);
-backdrop-filter: blur( 10px );
--webkit-backdrop-filter: blur( 10px );
-}
 
 #sm-bug{
   height: 30px;
@@ -300,9 +293,16 @@ backdrop-filter: blur( 10px );
   color: rgb(177, 68, 22);
   font-weight: 400;
 }
+#posts-container{
+  background-image: url('./images/susan-mohr-jAnCBsbofgo-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
 #posts{
+  
+
   color: #b4b4b4;
-  /* margin-top: 100px; */
   height: fit-content;
   padding: 1.5rem;
 }
@@ -360,7 +360,7 @@ backdrop-filter: blur( 10px );
 
 .post-card:nth-child(3){
   grid-area: three;
-  background-color: rgba(138, 165, 42, 0.255);
+  background-color: rgba(84, 93, 53, 0.95);
 }
 
 .post-card:nth-child(3):hover{
@@ -373,7 +373,7 @@ backdrop-filter: blur( 10px );
 
 .post-card:nth-child(4){
   grid-area: four;
-  background-color: rgba(42, 165, 50, 0.315);
+  background-color: rgba(34, 85, 38, 0.95);
 }
 
 .post-card:nth-child(4):hover{
@@ -386,7 +386,7 @@ backdrop-filter: blur( 10px );
 
 .post-card:nth-child(5){
   grid-area: five;
-  background-color: rgba(42, 126, 165, 0.362);
+  background-color: rgba(52, 93, 112, 0.95);
 }
 
 .post-card:nth-child(5):hover{
@@ -407,14 +407,6 @@ backdrop-filter: blur( 10px );
   font-size: small;
   background-size: contain;
 }
-
-.large-card{
-  background-image: url('./images/hummingbird\ grey\ fill.png');
-  background-size: contain;
-  height: 200px;
-}
-
-
 
 
 
