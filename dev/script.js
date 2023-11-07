@@ -128,48 +128,50 @@ function detectBrowser() {
   projectElementsArr=Array.from(projectCard);
   projectElementsArr.map(index=>index.addEventListener('click', listen));
 
+
+  const loader=document.getElementById("video-loading");
+  
+
   function listen(e){
+    loader.style.display="block";
     projectElementsArr.map(index=>index.classList.remove('active'));
     let dyn=document.getElementById("dynamic-video");
       if (dyn.hasChildNodes()===true){
         clear();
         };
       displayProject(e.target.className);
-
-
       let index=e.target.className[e.target.className.length-1];
       let card=document.getElementsByClassName(`project${index}`);
-      
-
       card[0].classList.toggle("active");
-      
   }
+
 
   function clear (){
     let dyn=document.getElementById('dynamic-video');
-    dyn.removeChild(dyn.childNodes[dyn.childNodes.length-1])
+    
+    dyn.removeChild(dyn.childNodes[dyn.childNodes.length-1]);
   }
 
+  
   function displayProject(key){
+   
     let container = document.getElementById('project-video-container')
     container.style.display = 'block';
     let dyn=document.getElementById('dynamic-video');
     let video=document.createElement('video');
     video.id="video"
     video.controls=true;
-   
+    video.addEventListener("loadeddata", onVideoLoad(video, loader))
     let source=document.createElement('source');
     source.id="source"
-    source.addEventListener("load", onVideoLoad());
     dyn.appendChild(video)
     video.appendChild(source)
     source.src=videoURLsObj[key];
-    video.poster='./images/hummingbird grey fill.png'
   };
 
-  function onVideoLoad(){
-    const loader=document.getElementById("video-loading");
-    loader.style.display=('none');
+  function onVideoLoad(video, loader){
+    loader.style.display='none';
+    video.poster='./images/hummingbird grey fill.png'
   }
 
   // contact form submission

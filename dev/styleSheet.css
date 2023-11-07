@@ -283,7 +283,7 @@ background-size: cover;
 }
 
 #video-loading{
-  display: block;
+  display: none;
 }
 
 #dynamic-video video{
