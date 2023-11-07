@@ -271,6 +271,7 @@ background-size: cover;
 }
 
 #project-video-container{
+  position: relative;
   width: fit-content;
   /* margin:auto; */
   margin-top: 20px;
@@ -281,9 +282,12 @@ background-size: cover;
   display: none;
 }
 
+#video-loading{
+  display: block;
+}
+
 #dynamic-video video{
   width: 100%;
-  
 }
 
 /* end project cards */

@@ -54,7 +54,6 @@ function mediaInq(){
         cards[1].href='./#projects';
         cards[2].href='./#projects';
 
-
     }
     else if (mediaQueryMin.matches) {
         
@@ -158,12 +157,20 @@ function detectBrowser() {
     let video=document.createElement('video');
     video.id="video"
     video.controls=true;
+   
     let source=document.createElement('source');
     source.id="source"
+    source.addEventListener("load", onVideoLoad());
     dyn.appendChild(video)
     video.appendChild(source)
     source.src=videoURLsObj[key];
+    video.poster='./images/hummingbird grey fill.png'
   };
+
+  function onVideoLoad(){
+    const loader=document.getElementById("video-loading");
+    loader.style.display=('none');
+  }
 
   // contact form submission
   let contactForm=document.getElementById('contact-form')
