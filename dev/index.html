@@ -137,23 +137,32 @@
     <div class="section" id="projects">
       <h3>Projects</h3>
       <div id="projectcard-container" >
-          <a class="project-card project1" >
-              <h4 class="project-title project1">The Feedback App</h4>
-              <p class="project-summary project1">
-                Messaging and submission app for media professionals and thier clients. Clients have non-admin access to projects where they can leave feedback for professionals on a submission.  
-              </p>
-          </a>
 
-          <a class="project-card project2" id="video-anchor">
-              <h4 class="project-title project2">Practice Timer</h4>
-              <p class="project-summary project2">
+        <a class="project-card project1" >
+          <h4 class="project-title project1">The Feedback App</h4>
+          <p class="project-summary project1">
+            Messaging and submission app for media professionals and thier clients. Clients have non-admin access to projects where they can leave feedback for professionals on a submission.  
+          </p>
+      </a>
+
+        <a class="project-card project2" >
+          <h4 class="project-title project2">Event Participant Management</h4> 
+          <p class="project-summary project2">
+            A full stack application that allows event organizers to manage participants. Organizers can create events, organize participants, and track attendance. Participant info is stored for marketing and exported to csv.
+          </p>
+        </a>
+
+
+          <a class="project-card project3" id="video-anchor">
+              <h4 class="project-title project3">Practice Timer</h4>
+              <p class="project-summary project3">
                 This Productivity timer tracks time spent on tasks with a timer for intervals. Analysis shows how much time was spent on each task from one week to one month. 
               </p>
           </a>
           
-          <a class="project-card project3" >
-              <h4 class="project-title project3">Town Board</h4>
-              <p class="project-summary project3">
+          <a class="project-card project4" >
+              <h4 class="project-title project4">Town Board</h4>
+              <p class="project-summary project4">
                 a message board app that allows users to make public posts but only edit thier own.
               </p>
           </a>
@@ -172,7 +181,15 @@
             Marketing website for a music festival. No framework just 3 files. HTML, CSS, and Javascript.
           </p>
         </div>
-    </a>
+      </a>
+      <a href="https://storied-nasturtium-0b4924.netlify.app/" target="_blank">
+        <div class="project-card">
+          <h4 class="project-title">Farah Siraj - Artist Website</h4>
+          <p class="project-summary">
+            Marketing website for musician Farah Siraj. React with a headless CMS
+          </p>
+        </div>
+      </a>
     </div>
     </div>
   </div>
@@ -237,8 +254,6 @@
       
     <!-- end blog cards -->
 
-
-   <script src="https://smtpjs.com/v3/smtp.js"></script>
     <div class="section" id="contact"> 
       <h3>Contact</h3>
       <div id="contact-container">
@@ -247,21 +262,22 @@
         </p>
         <div  id="contact-input" style="color: #f4f4f4;">
           <div></div>
-          <form id="contact-form" autocomplete="off">
+          <form id="contact-form" autocomplete="off" name="contact" netlify>
             <h4>name:</h4>
-            <input type="text" id="name" autocomplete="off">
+            <input type="text" name="name" id="name" autocomplete="off">
             <h4>email:</h4>
-            <input type="text" id="email" autocomplete="off">
+            <input type="text" name="email" id="email" autocomplete="off">
             <h4>message:</h4>
-            <textarea id="message" style="width: 300px; height: 250px" autocomplete="off"></textarea>
+            <textarea name="message" id="message" style="width: 300px; height: 250px" autocomplete="off"></textarea>
             <br>
-            <input class="submit-button" type="submit">
+            <button class="submit-button" type="submit">send</button>
+                
           </form>
         </div>
       </div>
     </div>
    
-      <script src="./script.js"></script>
+    <script src="./script.js"></script>
      
 
 

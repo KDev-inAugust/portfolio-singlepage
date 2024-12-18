@@ -53,6 +53,7 @@ function mediaInq(){
         cards[0].href='./#projects';
         cards[1].href='./#projects';
         cards[2].href='./#projects';
+        cards[3].href='./#projects';
 
     }
     else if (mediaQueryMin.matches) {
@@ -66,6 +67,7 @@ function mediaInq(){
         cards[0].href='./#projects';
         cards[1].href='./#projects';
         cards[2].href='./#projects';
+        cards[3].href='./#projects';
         
 
     }
@@ -76,6 +78,7 @@ function mediaInq(){
         cards[0].href='./#video-anchor';
         cards[1].href='./#video-anchor';
         cards[2].href='./#video-anchor';
+        cards[3].href='./#video-anchor';
 
     }
 }
@@ -115,13 +118,17 @@ function detectBrowser() {
     "project-title project1": "video/Feedback App Demo.mov",
     "project-summary project1": "video/Feedback App Demo.mov",
 
-    "project-card project2": "video/React Interval Timer.mp4", 
-    "project-title project2": "video/React Interval Timer.mp4",
-    "project-summary project2": "video/React Interval Timer.mp4",
+    "project-card project2": "video/Sign Up Form App Video Demo.mov",
+    "project-title project2": "video/Sign Up Form App Video Demo.mov",
+    "project-summary project2": "video/Sign Up Form App Video Demo.mov",
 
-    "project-card project3": "video/Town Board Walk Through.mov", 
-    "project-title project3": "video/Town Board Walk Through.mov",
-    "project-summary project3": "video/Town Board Walk Through.mov"
+    "project-card project3": "video/React Interval Timer.mp4", 
+    "project-title project3": "video/React Interval Timer.mp4",
+    "project-summary project3": "video/React Interval Timer.mp4",
+
+    "project-card project4": "video/Town Board Walk Through.mov", 
+    "project-title project4": "video/Town Board Walk Through.mov",
+    "project-summary project4": "video/Town Board Walk Through.mov"
   }
 
   let projectCard = document.getElementsByClassName("project-card");
@@ -174,38 +181,6 @@ function detectBrowser() {
     video.poster='./images/hummingbird grey fill.png'
   }
 
-  // contact form submission
-  let contactForm=document.getElementById('contact-form')
-  contactForm.addEventListener("submit", handleSubmit)
-  function handleSubmit(e){
-    let name=document.getElementById('name');
-    let email=document.getElementById('email');
-    let message=document.getElementById('message');
-    e.preventDefault();
-    sendEmail(name.value, email.value, message.value);
-    name.value='';
-    email.value='';
-    message.value='';
-  }
-
-  function sendEmail(name, email, message){
-    Email.send({
-    SecureToken : "dadc541e-6f14-4230-94fd-80d73e811ad3",
-    To : 'buy1@kanemathis.com',
-    From : "kanesolar@gmail.com",
-    Subject : "Webform Submission!!",
-    Body : `FROM: ${name} `
-    + `<br> MESSAGE: "${message}"`
-    + ` <br> E-MAIL: ${email}`
-    }).then(
-      (message) => {
-        if (message==="OK"){
-          alert("Thanks, Your Message Has Been Sent!")
-        }
-        else alert ("There was a problem submitting your message, please try again")
-      }
-    );
-  }
 
     
 

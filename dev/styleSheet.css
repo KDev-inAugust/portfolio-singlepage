@@ -262,7 +262,7 @@ background-size: cover;
   background-color: rgba(177, 173, 49, 0.791);
 }
 
-.project1.active, .project2.active, .project3.active{
+.project1.active, .project2.active, .project3.active, .project4.active {
   color: #d4d4d4;
   border: 3px solid rgb(170, 170, 29);
   background-color: rgba(56, 66, 32, 0.724);
